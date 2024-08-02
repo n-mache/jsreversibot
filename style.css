@@ -24,11 +24,20 @@
                 margin: auto;
                 border-radius: 50%;
             }
+            &.canplace {
+                cursor: pointer;
+            }
+            &.canplace:hover:after {
+                opacity: 0.6;
+            }
+            &.canplace:after {
+                opacity: 0.4;
+            }
             &[data-color="1"]:after {
-                background: #fff;
+                background: #000;
             }
             &[data-color="2"]:after {
-                background: #000;
+                background: #fff;
             }
         }
     }
